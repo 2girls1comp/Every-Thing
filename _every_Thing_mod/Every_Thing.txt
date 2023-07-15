@@ -4,7 +4,7 @@ DEMO:
 youtu.be/72gDglDrQag
 
 INSTALLATION:
-- Copy "Every_Thing.dll" and the "props" folder in your scripts folder (if you don't have one create it) in your GTA V root folder
+- Copy "EveryThing.dll" and the "props" folder in your scripts folder (if you don't have one create it) in your GTA V root folder
 
 USAGE:
 - press G to activate the mod
