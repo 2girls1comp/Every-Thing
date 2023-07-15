@@ -1,0 +1,7 @@
+prop_snow_watertower01
+prop_snow_watertower01_l2
+prop_snow_watertower03
+prop_watertower01
+prop_watertower02
+prop_watertower03
+prop_watertower04

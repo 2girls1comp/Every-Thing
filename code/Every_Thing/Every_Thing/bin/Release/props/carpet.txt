@@ -1,0 +1,7 @@
+ch_chint02_carpet_wear
+ch_chint02_carpet_wear_flat
+ch_chint02_derelict_carpet
+ch_chint02_office_carpet_decal
+ch_chint09_security_carpet
+ch_chint09_security_carpet2
+ch_chint09_store_carpet

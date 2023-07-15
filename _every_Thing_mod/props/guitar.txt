@@ -1,0 +1,6 @@
+prop_acc_guitar_01
+prop_acc_guitar_01_d1
+prop_el_guitar_01
+prop_el_guitar_02
+prop_el_guitar_03
+vw_prop_casino_art_guitar_01a

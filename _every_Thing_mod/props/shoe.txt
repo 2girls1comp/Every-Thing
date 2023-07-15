@@ -1,0 +1,9 @@
+prop_cs_amanda_shoe
+prop_ld_shoe_01
+prop_ld_shoe_02
+v_club_shoerack
+v_res_fa_shoebox1
+v_res_fa_shoebox2
+v_res_fa_shoebox3
+v_res_fa_shoebox4
+v_ret_ps_shoe_01

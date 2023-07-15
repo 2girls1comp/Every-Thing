@@ -1,0 +1,15 @@
+prop_ld_tshirt_01
+prop_ld_tshirt_02
+prop_tshirt_box_02
+prop_tshirt_shelf_1
+prop_tshirt_shelf_2
+prop_tshirt_shelf_2a
+prop_tshirt_shelf_2b
+prop_tshirt_shelf_2c
+prop_tshirt_stand_01
+prop_tshirt_stand_01b
+prop_tshirt_stand_02
+prop_tshirt_stand_04
+v_ret_gc_tshirt1
+v_ret_gc_tshirt5
+prop_tshirt_box_01

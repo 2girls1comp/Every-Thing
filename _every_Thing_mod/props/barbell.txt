@@ -1,0 +1,10 @@
+prop_barbell_01
+prop_barbell_02
+prop_barbell_100kg
+prop_barbell_10kg
+prop_barbell_20kg
+prop_barbell_30kg
+prop_barbell_40kg
+prop_barbell_50kg
+prop_barbell_60kg
+prop_barbell_80kg

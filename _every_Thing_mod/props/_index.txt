@@ -1,0 +1,6 @@
+worklight
+wall_light
+ceiling_light
+lightpendant
+flower
+stair

@@ -1,0 +1,5 @@
+prop_telescope
+prop_telescope_01
+prop_t_telescope_01b
+xs_prop_arena_telescope_01
+xs_prop_trophy_telescope_01a

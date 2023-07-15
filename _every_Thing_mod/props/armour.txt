@@ -1,0 +1,7 @@
+prop_armour_pickup
+prop_bodyarmour_02
+prop_bodyarmour_03
+prop_bodyarmour_04
+prop_bodyarmour_05
+prop_bodyarmour_06
+prop_ld_armour
