@@ -34,6 +34,8 @@ namespace Every_Thing
         int rangeMin = -300 * 2;
         int rangeMax = 300 * 2;
 
+        int thingCounter = 0;
+        bool showPropInfo = false;
         public Every_Thing() 
         {
             this.Tick += onTick;
@@ -79,9 +81,28 @@ namespace Every_Thing
                         //UI.Notify("X = " + rndPropX + "\nY = " + rndPropY + "\nZ = " + rndPropZ);
 
                         Vector3 newSpawnPos = new Vector3(spawnPos.X + (rndPropX), spawnPos.Y + (rndPropY), spawnPos.Z + (rndPropZ));
-                        Prop myProp = World.CreateProp(matrix[index][indexProp], newSpawnPos, true, false);
+                        
+                        // Declare a model struct and wait for up to 250 milliseconds
+                        var model = new Model(matrix[index][indexProp]);
+                        model.Request(250);
+                        // Check the model is valid
+                        if (model.IsInCdImage && model.IsValid)
+                        {
+                            // Ensure the model is loaded before we try to create it in the world
+                            while (!model.IsLoaded) Script.Wait(50);
 
-                        PropList.Add(myProp);
+                            // Create the prop in the world
+                            Prop myProp = World.CreateProp(model, newSpawnPos, true, false);
+                            PropList.Add(myProp);
+                            if(showPropInfo)UI.Notify("Thing no." + thingCounter + ", " + matrix[index][indexProp]);
+                            thingCounter++;
+                        }
+
+                        // Let the game release the model as no longer needed to remove it from memory.
+                        model.MarkAsNoLongerNeeded();
+
+                        //Prop myProp = World.CreateProp(matrix[index][indexProp], newSpawnPos, true, false);
+                        //PropList.Add(myProp);
 
 
                         if (indexProp < matrix[index].Count - 1) indexProp++;
@@ -102,7 +123,7 @@ namespace Every_Thing
 
                         FuncInit = false;
                         counter++;
-                        if (counter % 30 == 0)
+                        if (counter % 20 == 0)
                         {
                             rangeMin -= 1;
                             rangeMax += 1;
@@ -126,6 +147,11 @@ namespace Every_Thing
                     //reset the timer
                     FuncInit = false;
                 }
+            }
+
+            else if (e.KeyCode == Keys.H)
+            {
+                showPropInfo = !showPropInfo;
             }
         }
         private void onKeyDown(object sender, KeyEventArgs e)
