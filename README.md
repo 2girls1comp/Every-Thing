@@ -12,7 +12,7 @@ USAGE:
 - note: once the mod is activated it will not turn off until every object has been spawned. 
 
 REQUIREMENTS:
-Script Hook V
-Script Hook V Dot Net 
+- [Script Hook V](http://www.dev-c.com/gtav/scripthookv/)
+- [Script Hook V Dot Net](https://github.com/crosire/scripthookvdotnet/releases)
 
 ![Every_Thing](screenshots/streetlight_sign_road_seabed_bldr5_1080p.png)
